@@ -1,0 +1,267 @@
+:root {
+    --color-primary-brand: #4d5ae5;
+    --color-pressed-state: #404bbf;
+    --color-darck: #2e2f42;
+    --color-success: #31d0aa;
+    --color-text:  #434455;
+    --color-subtle-text: #8e8f99;
+    --color-accent: #e7e9fc;
+    --color-light: #f4f4fd;
+    --color-modal-overlay: rgba(46, 47, 66, 0.4);
+    --color-hero-background: rgba(46, 47, 66, 0.7);
+    --color-white-background: #fff;
+    --color-modal-background: #fcfcfc;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+ul {
+    list-style-type: none; /*убирає маркування списку*/
+}
+
+img {
+	display: block;
+}
+
+.address {
+    font-style: normal;
+}
+
+body {
+    color: var(--color-text);
+    background-color: var(--color-white-background);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.visually-hidden {
+    position:absolute;
+    left: 10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+p {
+letter-spacing: 0.02em;
+}
+
+.sales-text {
+    font-size: 16px;
+}
+
+.title-sections {
+    color: var(--color-darck);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.title {
+    color: var(--color-darck);
+    font-weight: 500;
+    font-size: 20px; 
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+/* haeder */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+ .header-nav {
+    display: flex;
+    gap: 76px;
+ }
+
+.header-menu { 
+    display: flex;
+    gap: 40px;
+}
+
+.address-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.header .link-logo,
+.footer .link-logo {
+    color: var(--color-primary-brand);
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.title-logo-header {
+    color: var(--color-darck);
+}
+
+.link {
+    color: var(--color-darck);
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+}
+
+.link:hover,
+.link:focus {
+    color: var(--color-pressed-state);
+}
+
+.address-link {
+    color: var(--color-text);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--color-pressed-state);
+}
+
+/* головна секція */
+.hero-section {
+    background-color: var(--color-darck);
+  }
+
+.hero-title {
+    width: 496px;
+    color: var(--color-white-background);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.hero-button {
+    color: var(--color-white-background);
+    background-color: var(--color-primary-brand);
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+ }
+
+.hero-button:hover,
+.hero-button:focus {
+background-color: var(--color-pressed-state);
+}
+
+/* section feature */
+
+.list-features {
+    display: flex;
+    gap: 24px;
+}
+
+.title-features {
+    margin-bottom: 8px;
+}
+
+.features-item {
+      width: calc((100% - 72px) / 4);
+}
+
+/* our team */
+.section-team {
+    background-color: var(--color-light);
+}
+.card-team {
+    background: var(--color-white-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc((100% - 72px) / 4);
+    gap: 32px;
+    padding: 0px 0px 32px 0px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    border-radius: 0 0 4px 4px;
+}
+
+.team-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+ }
+
+.title-sections.indent {
+    margin-bottom: 72px;
+}
+
+.list-taem {
+    display: flex;
+    gap: 24px;
+}
+
+/* footer */
+.footer {
+    background-color: var(--color-darck);
+ }
+
+.link-logo-footer {
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    color: var(--color-light);
+}
+.title-logo-footer {
+color: var(--color-primary-brand);
+}
+
+
+.sales-text-footer {
+    color: var(--color-light);
+}
+
+.title-logo-footer {
+    color: var(--color-light);
+}
