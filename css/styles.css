@@ -125,7 +125,7 @@ letter-spacing: 0.02em;
 
 .header-menu { 
     display: flex;
-    padding: 24px 0;
+    
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: row;
@@ -133,6 +133,9 @@ letter-spacing: 0.02em;
    
 }
 
+.header-menu a{
+padding: 24px 0;
+}
 
 .address-menu {
     display: flex;
